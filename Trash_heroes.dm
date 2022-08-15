@@ -1,7 +1,7 @@
 #modname "Trash Heroes"
 #description "Mod adds some mercenary squads, based on nations from natgen games.
 Comp: units 8000-8026, weapons 1500-1501
-By Dark_Spark. v1 (RemN1 only)"
+By Dark_Spark. v1.5 (RemN1 only)"
 --22.09.21 8:00 A mod made to add\replace mercenaries based on the previous natgen games.
 #icon "Trash_Heroes/banner.tga"
 
@@ -982,7 +982,7 @@ female
 #unit "Slave Auxiliary"
 #nrunits 60
 #minmen 30
-#minpay 400
+#minpay 300
 #recrate 200 --1 per mount
 #eramask 7
 #end
@@ -995,7 +995,7 @@ female
 #unit "Slave Hammerer"
 #nrunits 40
 #minmen 30
-#minpay 400
+#minpay 300
 #recrate 100 --1 per mount
 #eramask 7
 #end
@@ -1070,7 +1070,7 @@ female
 #unit "Narbrian Morninglord"
 #nrunits 20
 #minmen 10
-#minpay 250
+#minpay 180
 #recrate 100 --1 per mount
 #eramask 7
 #end
@@ -1083,7 +1083,7 @@ female
 #unit "Narbrian Hoburg Slave"
 #nrunits 20
 #minmen 10
-#minpay 250
+#minpay 180
 #recrate 100 --1 per mount
 #eramask 7
 #end
