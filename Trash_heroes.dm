@@ -6,8 +6,9 @@ By Dark_Spark. v1.5 (RemN1 only)"
 #icon "Trash_Heroes/banner.tga"
 
 --Trash_Heroes/RemN1/
+--Trash_Heroes/DRaNik/
 
-
+==============================================RemN1 units
 --HRAZIR====================================== 
 
 #newmonster 8000
@@ -968,7 +969,186 @@ female
 #armor 158 --- Robes / ornate_mediumrobe2
 #end
 
+======================================================== DRaNik units
+--PISMATIA======
+#newmonster 8027
+#name "Supreme Monk"
+#spr1 "nationgen_dranik/120-pismatia/unit_3538_a.tga"
+#spr2 "nationgen_dranik/120-pismatia/unit_3538_b.tga"
+#humanoid
+#gcost 105
+#ap 11
+#mapmove 16
+#mor 11
+#mr 13
+#hp 22
+#str 15
+#att 10
+#def 9
+#prec 8
+#enc 3
+#size 3
+#maxage 500
+#amphibian
+#prot 6
+#startage 200
+#darkvision 50
+#twiceborn 3196
+#magicskill 8 1
+#holy
+#goodleader
+#rpcost 1
+#descr "The Supreme Monks are what passes for religious authority in Pismatia, a land without religious convictions. The Supreme Monks of Pismatia are able commanders whose orders are carried out by their followers."
+#itemslots 15494
+#armor 24 --- Coral Cap / coralcap-p2
+#weapon 7 ---  / quarterstaff-p1
+#end
 
+--- Shapechange form for Pure Disciple
+#newmonster 8028
+#magicboost 53 -1
+#name "Werebear"
+#weapon 20
+#weapon 29
+#size 3
+#hp 33
+#prot 8
+#mor 17
+#mr 13
+#enc 2
+#str 17
+#att 12
+#def 9
+#prec 5
+#mapmove 20
+#ap 14
+#berserk 1
+#heal
+#forestsurvival
+#mountainsurvival
+#humanoid
+#maxage 1000
+#holy
+#descr "The sacred units in Pismatia are clad in light armor and fight with a pincer. They are skilled shapeshifters and can change into a werebear."
+#spr1 "nationgen_dranik/120-pismatia/shapechange_3501_a.tga"
+#spr2 "nationgen_dranik/120-pismatia/shapechange_3501_b.tga"
+#firstshape 8029
+#holy
+#gcost 65
+#end
+
+#newmonster 8029
+#name "Pure Disciple"
+#spr1 "nationgen_dranik/120-pismatia/unit_3534_a.tga"
+#spr2 "nationgen_dranik/120-pismatia/unit_3534_b.tga"
+#humanoid
+#gcost 65
+#ap 11
+#mapmove 16
+#mor 16
+#mr 14
+#hp 35
+#str 17
+#att 14
+#def 13
+#prec 5
+#enc 3
+#size 3
+#maxage 1000
+#amphibian
+#rpcost 20000
+#prot 11
+#startage 150
+#darkvision 50
+#twiceborn 3196
+#poisonarmor 5
+#weapon 235
+#weapon 235
+#weapon 235
+#secondshape 8028
+#heal
+#cleanshape
+#holy
+#descr "The sacred units in Pismatia are clad in light armor and fight with a pincer. They are skilled shapeshifters and can change into a werebear."
+#itemslots 15494
+#armor 23 --- Coral Hauberk / coralhauberk-s-elite
+#armor 211 --- Meteorite Cap / atl_meteoritecap-s
+#weapon 235 ---  / pincer4
+#end
+
+#newmonster 8030
+#name " Wolven Herbalist"
+#spr1 "nationgen_dranik/120-pismatia/unit_3541_a.tga"
+#spr2 "nationgen_dranik/120-pismatia/unit_3541_b.tga"
+#humanoid
+#gcost 200
+#ap 11
+#mapmove 16
+#mor 11
+#mr 15
+#hp 22
+#str 15
+#att 9
+#def 8
+#prec 8
+#enc 3
+#size 3
+#maxage 500
+#amphibian
+#prot 6
+#startage 200
+#darkvision 50
+#twiceborn 3196
+#magicskill 2 2
+#magicskill 6 1
+#custommagic 9088 100
+#custommagic 9088 10
+#rpcost 2
+#okleader
+#descr "The  Wolven Herbalists of Pismatia are skilled in water magic. Pismatia's  Wolven Herbalists are unremarkable leaders whose plans are carried out by their attendants."
+#itemslots 15494
+#weapon 446 ---  / mace-p2
+#armor 24 --- Coral Cap / coralcap-p3
+#end
+
+#newmonster 8031
+#name "Elder Wolven Herbalist"
+#spr1 "nationgen_dranik/120-pismatia/unit_3542_a.tga"
+#spr2 "nationgen_dranik/120-pismatia/unit_3542_b.tga"
+#humanoid
+#gcost 300
+#ap 11
+#mapmove 16
+#mor 11
+#mr 17
+#hp 22
+#str 15
+#att 9
+#def 8
+#prec 8
+#enc 3
+#size 3
+#maxage 500
+#amphibian
+#prot 6
+#startage 200
+#darkvision 50
+#twiceborn 3196
+#magicskill 2 3
+#magicskill 6 2
+#custommagic 9088 100
+#custommagic 9088 10
+#dragonlord 1
+#rpcost 4
+#okleader
+#older -10
+#descr "The Elder Wolven Herbalists are well learned in water magic. Pismatia's Elder Wolven Herbalists are unexceptional leaders whose plans are enacted by their pawns. They are trained in commanding dragons and their kin and they can summon more dragonlike creatures than normal."
+#itemslots 15494
+#armor 24 --- Coral Cap / coralcap-p3
+#weapon 446 ---  / mace-p3
+#end
+
+--AGNUS================
 
 
 -==============Mercs RemN1
