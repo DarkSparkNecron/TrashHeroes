@@ -972,7 +972,7 @@ female
 ======================================================== DRaNik units
 --PISMATIA======
 #newmonster 8027
-#name "Supreme Monk"
+#name "Supreme Crab Monk"
 #spr1 "nationgen_dranik/120-pismatia/unit_3538_a.tga"
 #spr2 "nationgen_dranik/120-pismatia/unit_3538_b.tga"
 #humanoid
@@ -998,7 +998,7 @@ female
 #holy
 #goodleader
 #rpcost 1
-#descr "The Supreme Monks are what passes for religious authority in Pismatia, a land without religious convictions. The Supreme Monks of Pismatia are able commanders whose orders are carried out by their followers."
+#descr "Artemi was a supreme monk in Pismatia in the old times, even if the great war was waged by the ascending pismatian god most of the non-foreign population wasnt so zealos about Him. However work is a work, given 20 well-breeded Pure Disciples, called in lands simply the Crabs, Artemi is sus exterminating those who oppose his will."
 #itemslots 15494
 #armor 24 --- Coral Cap / coralcap-p2
 #weapon 7 ---  / quarterstaff-p1
@@ -1029,7 +1029,7 @@ female
 #humanoid
 #maxage 1000
 #holy
-#descr "The sacred units in Pismatia are clad in light armor and fight with a pincer. They are skilled shapeshifters and can change into a werebear."
+#descr "SURPRISE"
 #spr1 "nationgen_dranik/120-pismatia/shapechange_3501_a.tga"
 #spr2 "nationgen_dranik/120-pismatia/shapechange_3501_b.tga"
 #firstshape 8029
@@ -1038,7 +1038,7 @@ female
 #end
 
 #newmonster 8029
-#name "Pure Disciple"
+#name "True Crab" --Pure Disciple
 #spr1 "nationgen_dranik/120-pismatia/unit_3534_a.tga"
 #spr2 "nationgen_dranik/120-pismatia/unit_3534_b.tga"
 #humanoid
@@ -1069,7 +1069,7 @@ female
 #heal
 #cleanshape
 #holy
-#descr "The sacred units in Pismatia are clad in light armor and fight with a pincer. They are skilled shapeshifters and can change into a werebear."
+#descr "WE ARE COMING FOR YOU"
 #itemslots 15494
 #armor 23 --- Coral Hauberk / coralhauberk-s-elite
 #armor 211 --- Meteorite Cap / atl_meteoritecap-s
@@ -1077,7 +1077,7 @@ female
 #end
 
 #newmonster 8030
-#name " Wolven Herbalist"
+#name "Pismatian Herbalist"
 #spr1 "nationgen_dranik/120-pismatia/unit_3541_a.tga"
 #spr2 "nationgen_dranik/120-pismatia/unit_3541_b.tga"
 #humanoid
@@ -1105,14 +1105,14 @@ female
 #custommagic 9088 10
 #rpcost 2
 #okleader
-#descr "The  Wolven Herbalists of Pismatia are skilled in water magic. Pismatia's  Wolven Herbalists are unremarkable leaders whose plans are carried out by their attendants."
+#descr "Ahel is a skilled water and nature mage, as any other wolven herbalist of Pismatia. When the great war ended he decided to offer his skills to help people."
 #itemslots 15494
 #weapon 446 ---  / mace-p2
 #armor 24 --- Coral Cap / coralcap-p3
 #end
 
 #newmonster 8031
-#name "Elder Wolven Herbalist"
+#name "Elder Herbalist"
 #spr1 "nationgen_dranik/120-pismatia/unit_3542_a.tga"
 #spr2 "nationgen_dranik/120-pismatia/unit_3542_b.tga"
 #humanoid
@@ -1142,7 +1142,7 @@ female
 #rpcost 4
 #okleader
 #older -10
-#descr "The Elder Wolven Herbalists are well learned in water magic. Pismatia's Elder Wolven Herbalists are unexceptional leaders whose plans are enacted by their pawns. They are trained in commanding dragons and their kin and they can summon more dragonlike creatures than normal."
+#descr "Taranis is one of the powerful Pismatian mages - Elder Wolven Herbalist. As wisest mages posess additional knowledge about drakes, that lived around the Pismatian lands, he was tasked to tame swamp drakes for the battle near throne in a mountains, however, the great war ended and he was free to do his stuff."
 #itemslots 15494
 #armor 24 --- Coral Cap / coralcap-p3
 #weapon 446 ---  / mace-p3
@@ -1392,4 +1392,48 @@ female
 #unit "Slave Auxiliary"
 #nrunits 0
 #minmen 5
+#end
+
+--===================== MERCS DRaNik
+---Pismatia
+
+#newmerc
+#name "The Crabs"
+#level 2
+#bossname "Artemi"
+#com "Supreme Crab Monk"
+#unit "True Crab"
+#nrunits 20
+#minmen 5
+#minpay 600
+#recrate 100
+#eramask 7
+#end
+
+#newmerc
+#name "Draketamer"
+#level 1
+#bossname "Taranis"
+#com "Elder Herbalist"
+#unit "Swamp Drake"
+#nrunits 10
+#minmen 2
+#minpay 250
+#recrate 200
+#randequip 1
+#eramask 7
+#end
+
+#newmerc
+#name "The Herbalist"
+#level 0
+#bossname "Ahel"
+#com "Pismatian Herbalist"
+#unit "True Crab"
+#nrunits 0
+#minmen 5
+#randequip 1
+#minpay 150
+#recrate 50
+#eramask 7
 #end
