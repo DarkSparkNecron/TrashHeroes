@@ -1149,7 +1149,254 @@ female
 #end
 
 --AGNUS================
+#newweapon 1801
+#name "Bardiche"
+#rcost 0
+#def 0
+#rcost 0
+#def 0
+#att 1
+#dmg 10
+#twohanded
+#rcost 4
+#def -1
+#len 4
+#slash
+#end
 
+#newweapon 1802
+#name "Bronze Claymore"
+#rcost 0
+#def 0
+#rcost 0
+#def 0
+#att 1
+#def 1
+#dmg 9
+#len 2
+#rcost 6
+#slash
+#twohanded
+#end
+
+#newweapon 1803
+#name "Iron Kopesh"
+#rcost 0
+#def 0
+#rcost 0
+#def 0
+#dmg 6
+#len 1
+#rcost 2
+#slash
+#ironweapon
+#end
+
+
+
+#newmonster 3557
+#name "Paladin-Lieutenant"
+#spr1 "nationgen_dranik/121-agnus/unit_3557_a.tga"
+#spr2 "nationgen_dranik/121-agnus/unit_3557_b.tga"
+#naga
+#gcost 75
+#ap 32
+#mapmove 22
+#mor 13
+#mr 13
+#hp 20
+#str 12
+#att 12
+#def 17
+#prec 15
+#enc 3
+#size 3
+#maxage 90
+#rpcost 1
+#prot 3
+#weapon 55 --- Hoof
+#heal
+#forestsurvival
+#female
+#descr "Aarolf is a strong and independent centaur woman, once called a horse she decided to proove to entire Agnus that she is not. Through the great war at loss of the mountain throne and fall of Zereni she made herself a reputation of a veteran and were tasked with leading several wolf paladins. But one day she heard a whispers from her god? - 's. body. where. the. horse's. head. should. be.' and that changed her..." 
+#nametype 110
+#twiceborn 714
+#lanceok
+#goodleader
+#poormagicleader
+#poorundeadleader
+#itemslots 13446
+#armor 253 --- Scale Barding / iron scale barding
+#armor 20 --- Iron Cap / ironcap-sprite4
+#weapon 1801 ---  / bardiche
+#end
+
+--- Shapechange form for Wolf Paladin
+#newmonster 3505
+#copyspr 854
+#magicboost 53 -1
+#name "Werewolf"
+#weapon 20
+#weapon 29
+#weapon 29
+#size 3
+#hp 20
+#prot 6
+#mor 17
+#mr 12
+#enc 2
+#str 14
+#att 12
+#def 11
+#prec 5
+#mapmove 16
+#ap 14
+#regeneration 10
+#forestsurvival
+#maxage 180
+#nametype 109
+#descr "s. body. where. the. horse's. head. should. be. horse no more. body. full. gift."
+#firstshape 3554
+#gcost 35
+#humanoid
+#end
+
+#newmonster 3554
+#name "Agnusish Wolf Paladin"
+#spr1 "nationgen_dranik/121-agnus/unit_3554_a.tga"
+#spr2 "nationgen_dranik/121-agnus/unit_3554_b.tga"
+#naga
+#gcost 35
+#ap 30
+#mapmove 22
+#mor 17
+#mr 14
+#hp 23
+#str 13
+#att 10
+#def 14
+#prec 12
+#enc 3
+#size 3
+#maxage 180
+#rpcost 25000
+#prot 3
+#weapon 55 --- Hoof
+#heal
+#forestsurvival
+#descr "Wolf paladins are the elite centaur forses of Agnus, wearing most powerful armour available and haveng incredible skills. They have a stange curse of turning into werewolf when badly damaged, since this curse appeared the spirit of their force was made. Many wolf totems are around Green Burrow, and some think that this curse is a sign of new god."
+#nametype 109
+#twiceborn 714
+#lanceok
+#secondshape 3505
+#itemslots 13446
+#armor 254 --- Plate Barding / iron plate barding
+#armor 118 --- Half Helmet / halfhelmet-sprite4-elite
+#armor 208 --- Iron Shield / shield4yellow
+#weapon 6 ---  / shortsword_elite
+#end
+
+#newmonster 3558
+#name "Agnusish High Chieftain"
+#spr1 "nationgen_dranik/121-agnus/unit_3558_a.tga"
+#spr2 "nationgen_dranik/121-agnus/unit_3558_b.tga"
+#humanoid
+#gcost 80
+#ap 15
+#mapmove 18
+#mor 16
+#mr 10
+#hp 25
+#str 16
+#att 13
+#def 12
+#prec 10
+#enc 3
+#size 3
+#maxage 90
+#trample
+#rpcost 1
+#prot 4
+#nametype 109
+#forestsurvival
+#heal
+#descr "High Chiefteins are mighty heroes of Agnus, leading armies into battle and slaying warlords in the duels."
+#twiceborn 710
+#goodleader
+#poormagicleader
+#poorundeadleader
+#itemslots 15494
+#armor 12 --- Scale Mail Hauberk / scale hauberk
+#armor 20 --- Iron Cap / ironcap
+#weapon 1802 ---  / claymore_bronze
+#end
+
+#newmonster 3545
+#name "Agnusish Fen Crossbowmen"
+#spr1 "nationgen_dranik/121-agnus/unit_3545_a.tga"
+#spr2 "nationgen_dranik/121-agnus/unit_3545_b.tga"
+#naga
+#gcost 25
+#ap 30
+#mapmove 22
+#mor 11
+#mr 13
+#hp 20
+#str 13
+#att 10
+#def 14
+#prec 12
+#enc 3
+#size 3
+#maxage 90
+#rpcost 25000
+#prot 3
+#weapon 55 --- Hoof
+#heal
+#forestsurvival
+#descr "Fen Crossbowmen is a ranged troops of Agnus. They were trained to survive in bogs to set traps for the enemies."
+#nametype 109
+#twiceborn 714
+#lanceok
+#swampsurvival
+#itemslots 13446
+#weapon 1803 ---  / kopesh
+#armor 253 --- Scale Barding / iron scale barding
+#armor 119 --- Reinforced Leather Cap / reinforcedcap1
+#weapon 25 ---  / crossbow
+#end
+
+#newmonster 3550
+#name "Agnusish Minotaur Champion"
+#spr1 "nationgen_dranik/121-agnus/unit_3550_a.tga"
+#spr2 "nationgen_dranik/121-agnus/unit_3550_b.tga"
+#humanoid
+#gcost 30
+#ap 15
+#mapmove 18
+#mor 14
+#mr 10
+#hp 23
+#str 16
+#att 11
+#def 10
+#prec 8
+#enc 3
+#size 3
+#maxage 90
+#trample
+#rpcost 30000
+#prot 4
+#nametype 109
+#forestsurvival
+#heal
+#descr "Minotaurs are large, wild creatures with the head of a bull, the upper body of a very muscular man and hindquarters of a hoofed being. Agnus's minotaur infantry are outfitted with claymores weapons and heavy armor. They full niche of a special task force against armies of the smaller races."
+#twiceborn 710
+#itemslots 15494
+#armor 12 --- Scale Mail Hauberk / scale hauberk
+#armor 20 --- Iron Cap / ironcap
+#weapon 1802 ---  / claymore_bronze
+#end
 
 -==============Mercs RemN1
 
@@ -1436,4 +1683,45 @@ female
 #minpay 150
 #recrate 50
 #eramask 7
+#end
+
+---Agnus
+
+#newmerc
+#name "Wolf Paladins"
+#level 1
+#bossname "Aarolf"
+#com "Paladin-Lieutenant"
+#unit "Agnusish Wolf Paladin"
+#nrunits 25
+#minmen 5
+#minpay 250
+#recrate 100
+#eramask 4
+#end
+
+#newmerc
+#name "Fen Squad"
+#level 1
+#bossname "Bread"
+#com "Agnusish High Chieftain"
+#unit "Agnusish Fen Crossbowmen"
+#nrunits 40
+#minmen 10
+#minpay 200
+#recrate 250
+#eramask 4
+#end
+
+#newmerc
+#name "Fen Squad"
+#level 1
+#bossname "Aguron"
+#com "Agnusish High Chieftain"
+#unit "Agnusish Minotaur Champion"
+#nrunits 35
+#minmen 10
+#minpay 280
+#recrate 150
+#eramask 4
 #end
