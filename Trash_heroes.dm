@@ -1714,7 +1714,7 @@ female
 #end
 
 #newmerc
-#name "Fen Squad"
+#name "Minos Task Force"
 #level 1
 #bossname "Aguron"
 #com "Agnusish High Chieftain"
